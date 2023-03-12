@@ -1,0 +1,264 @@
+/* Main section */
+#slp_main_container {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-column-gap: 20px;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    #slp_main_container {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/* Body area */
+#slp_body_area .slp_form {
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+/* Title - ody area */
+#slp_body_area #slp_title {
+    display: inline;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #17359e;
+    color: #fff;
+    font-size: 22px;
+}
+
+/*========== Grid - all elements ============*/
+.slp_form .slp_elements_grid,
+.slp_form textarea {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid #70707024;
+    border-radius: 5px;
+    padding: 20px 10px;
+    box-shadow: 0 10px 20px #00000008;
+    transition: all .4s;
+}
+
+.slp_form textarea {
+    padding: 20px !important;
+}
+
+@media screen and (max-width: 1750px) {
+    .slp_elements_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+}
+
+@media screen and (max-width: 1475px) {
+    .slp_elements_grid {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .slp_elements_grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+.slp_elements_grid:hover {
+    background: #f1f2ff;
+    transform: scale(1, 1.1);
+}
+
+
+
+
+
+
+/*=========== Label style ===============*/
+
+#slp_body_area .slp_form form label {
+    font-size: 15px;
+    cursor: help;
+    position: relative;
+}
+
+/*=========== px add - before label  ================*/
+
+label[for="slp_login_input_round"]::before,
+label[for="slp_loginBox_padding"]::before,
+label[for="slp_loginBox_round"]::before,
+label[for="slp_loginBtn_round"]::before,
+label[for="slp_login_input_padding"]::before,
+label[for="slp_login_input_border"]::before,
+label[for="slp_login_logo_border"]::before,
+label[for="slp_loginLogo_round"]::before,
+label[for="slp_loginLogo_padding"]::before,
+label[for="slp_loginBtn_padding"]::before,
+label[for="slp_loginBox_border"]::before,
+label[for="slp_loginFP_txtSize"]::before,
+label[for="slp_login_btn_f_size"]::before,
+label[for="slp_login_input_f_size"]::before,
+label[for="slp_login_btn_border"]::before {
+    content: 'px';
+    position: absolute;
+    bottom: -28px;
+    left: 30px;
+    cursor: default;
+}
+
+
+
+/* ========= Input ========== */
+
+#slp_body_area .slp_form form input {
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+#slp_body_area .slp_form form input[type="text"] {
+    width: 80%;
+}
+
+#slp_body_area .slp_form form input[type="color"] {
+    width: 130px;
+    height: 40px;
+}
+
+
+/*=========== Submit button style ==============*/
+
+#slp_body_area .slp_form form .slp_submit_btn {
+    background: #17349f;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 0px solid;
+    transition: all .3s ease-in-out;
+    margin-left: auto;
+    position: sticky;
+    bottom: 30px;
+    font-size: 16px;
+    box-shadow: 0 5px 20px #00000045;
+    margin-top: 25px;
+}
+
+#slp_body_area .slp_form form .slp_submit_btn:hover {
+    background: #009c03;
+    cursor: pointer;
+}
+
+#slp_body_area .slp_form form .slp_submit_btn:focus {
+    transform: scale(0.95);
+}
+
+/* ========= Title of every section ============= */
+#slp_body_area .slp_form form .slp_section_title {
+    margin-top: 50px;
+    font-size: 22px;
+    border-left: 4px solid #17359e;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+
+/*================= Sidebar style ====================*/
+
+#slp_sidebar_area {
+    padding: 10px;
+    padding-top: 0 !important;
+}
+
+#slp_sidebar_area .slp_sticky_preview {
+    position: sticky;
+    top: 60px;
+}
+
+#slp_sidebar_area img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+/*================ Author Details ===================*/
+
+#slp_sidebar_area .slp_author_details {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+}
+
+#slp_sidebar_area .slp_author_details_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#slp_sidebar_area .slp_author_details .slp_author_discrip p {
+    margin: 0 !important;
+    text-align: justify;
+}
+
+
+/* ========= Adding Social Media ============ */
+.slp_add_social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding-top: 15px;
+}
+
+.slp_add_social img {
+    transition: all .2s ease-out;
+}
+
+.slp_add_social img:hover {
+    transform: scale(0.9);
+}
+
+/*========== Buy me a coffee ============*/
+.slp_buy_me_a_coffee {
+    margin-top: 10px;
+}
+
+.slp_buy_me_a_coffee img {
+    animation-name: slp_buyMe_aCoffe;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* ============ Animation ================ */
+@keyframes slp_buyMe_aCoffe {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+
+
+/* Focus off */
+#slp_main_container input:focus,
+#slp_main_container div:focus,
+#slp_main_container h1:focus,
+#slp_main_container h2:focus,
+#slp_main_container h3:focus,
+#slp_main_container h4:focus,
+#slp_main_container h5:focus,
+#slp_main_container h6:focus,
+#slp_main_container p:focus,
+#slp_main_container label:focus,
+#slp_main_container button:focus,
+#slp_main_container textarea:focus,
+#slp_main_container a:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: none !important;
+}

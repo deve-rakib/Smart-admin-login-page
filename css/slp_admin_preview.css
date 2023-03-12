@@ -1,0 +1,158 @@
+/*
+==================== Live Preview =====================
+*/
+
+/* Heading */
+.slp_sidebar_preview_heading h1 {
+    display: inline;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #009c03;
+    color: #fff;
+    font-size: 22px;
+}
+.slp_sidebar_preview_heading {
+    text-align: center;
+}
+
+
+/* Background */
+
+#slp_sidebar_preview {
+    background-image: url(https://cdn.wallpapersafari.com/26/72/4x6ZgJ.jpg);
+    position: relative !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14%;
+    height: 500px;
+    border-radius: 3px;
+    background-position: center center;
+    margin-top: 40px;
+    display: flex;
+}
+
+#slp_sidebar_preview::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #b61ed2;
+    opacity: .3;
+    border-radius: 3px;
+}
+
+/* box preview */
+#slp_sidebar_preview .slp_pv_login_box {
+    width: 85%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1525px) {
+    #slp_sidebar_preview .slp_pv_login_box {
+        width: 85%;
+    }
+}
+
+#slp_sidebar_preview .slp_pv_login_box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background: #fff;
+    opacity: 0.3;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* logo preview */
+#slp_sidebar_preview .slp_pv_login_logo {
+    width: 90px;
+    margin: auto;
+    position: relative !important;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Input - preview */
+#slp_sidebar_preview .slp_pv_login_input input[type="text"],
+#slp_sidebar_preview .slp_pv_login_input input[type="password"] {
+    width: 100%;
+    margin: 0 6px 16px 0;
+    min-height: 40px;
+    max-height: none;
+    border-left: 4px solid #004aad;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 0px;
+    padding-left: 15px !important;
+}
+
+/* Label - preview */
+#slp_sidebar_preview .slp_pv_login_input label {
+    font-size: 14px;
+    line-height: 1.5;
+    display: inline-block;
+    margin-bottom: 3px;
+    color: #ddd;
+}
+
+
+/* Submit button - preview */
+#slp_sidebar_preview .slp_pv_login_input input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    background: #003ecb;
+    border: 0;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+#slp_sidebar_preview .slp_pv_login_input input[type="submit"]:hover {
+    background: #262626;
+    color: #fff;
+}
+
+/* Forgot password - preview */
+.slp_fg_pass_wp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.slp_fg_pass_wp span {
+    margin-top: 5px;
+    display: inline-block;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.slp_fg_pass_wp a {
+    display: inline-block;
+    background: #003ecb;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.slp_fg_pass_wp a:hover {
+    background: #262626;
+    color: #fff;
+}
